@@ -24,7 +24,7 @@
 Binding is so close to the original API as possible, but some things still differ.
  1. Names lost 'gmp' prefix as not needed.
  2. f_get_d_2exp, f_get_str return exp as second result.
- 3. Added luasprintf, for output output in lua string.
+ 3. Added luasprintf, for formatted output in lua string.
 
 # TODO
  - Wrap mpz_import and mpz_export functions
