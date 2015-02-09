@@ -444,1021 +444,1021 @@ function mod.sscanf(s, fmt, ...)
   return bind.__gmp_sscanf(s, fmt, ...)
 end
 
-function mod.mpz_realloc(integer, new_alloc)
+function mod.z_realloc(integer, new_alloc)
   return bind.__gmpz_realloc(integer, new_alloc)
 end
 
-function mod.mpz_abs(rop, op)
+function mod.z_abs(rop, op)
   bind.__gmpz_abs(rop, op)
 end
 
-function mod.mpz_add(rop, op1, op2)
+function mod.z_add(rop, op1, op2)
   bind.__gmpz_add(rop, op1, op2)
 end
 
-function mod.mpz_add_ui(rop, op1, op2)
+function mod.z_add_ui(rop, op1, op2)
   bind.__gmpz_add_ui(rop, op1, op2)
 end
 
-function mod.mpz_addmul(rop, op1, op2)
+function mod.z_addmul(rop, op1, op2)
   bind.__gmpz_addmul(rop, op1, op2)
 end
 
-function mod.mpz_addmul_ui(rop, op1, op2)
+function mod.z_addmul_ui(rop, op1, op2)
   bind.__gmpz_addmul_ui(rop, op1, op2)
 end
 
-function mod.mpz_and(rop, op1, op2)
+function mod.z_and(rop, op1, op2)
   bind.__gmpz_and(rop, op1, op2)
 end
 
-function mod.mpz_bin_ui(rop, n, k)
+function mod.z_bin_ui(rop, n, k)
   bind.__gmpz_bin_ui(rop, n, k)
 end
 
-function mod.mpz_bin_uiui(rop, n, k)
+function mod.z_bin_uiui(rop, n, k)
   bind.__gmpz_bin_uiui(rop, n, k)
 end
 
-function mod.mpz_cdiv_q(q, n, d)
+function mod.z_cdiv_q(q, n, d)
   bind.__gmpz_cdiv_q(q, n, d)
 end
 
-function mod.mpz_cdiv_q_2exp(q, n, b)
+function mod.z_cdiv_q_2exp(q, n, b)
   bind.__gmpz_cdiv_q_2exp(q, n, b)
 end
 
-function mod.mpz_cdiv_q_ui(q, n, d)
+function mod.z_cdiv_q_ui(q, n, d)
   return bind.__gmpz_cdiv_q_ui(q, n, d)
 end
 
-function mod.mpz_cdiv_qr(q, r, n, d)
+function mod.z_cdiv_qr(q, r, n, d)
   bind.__gmpz_cdiv_qr(q, r, n, d)
 end
 
-function mod.mpz_cdiv_qr_ui(q, r, n, d)
+function mod.z_cdiv_qr_ui(q, r, n, d)
   return bind.__gmpz_cdiv_qr_ui(q, r, n, d)
 end
 
-function mod.mpz_cdiv_r(r, n, d)
+function mod.z_cdiv_r(r, n, d)
   bind.__gmpz_cdiv_r(r, n, d)
 end
 
-function mod.mpz_cdiv_r_2exp(r, n, b)
+function mod.z_cdiv_r_2exp(r, n, b)
   bind.__gmpz_cdiv_r_2exp(r, n, b)
 end
 
-function mod.mpz_cdiv_r_ui(r, n, d)
+function mod.z_cdiv_r_ui(r, n, d)
   return bind.__gmpz_cdiv_r_ui(r, n, d)
 end
 
-function mod.mpz_cdiv_ui(n, d)
+function mod.z_cdiv_ui(n, d)
   return bind.__gmpz_cdiv_ui(n, d)
 end
 
-function mod.mpz_clear(x)
+function mod.z_clear(x)
   bind.__gmpz_clear(x)
 end
 
-function mod.mpz_clears(x, ...)
+function mod.z_clears(x, ...)
   bind.__gmpz_clears(x, help.vararg(...))
 end
 
-function mod.mpz_clrbit(rop, bit_index)
+function mod.z_clrbit(rop, bit_index)
   bind.__gmpz_clrbit(rop, bit_index)
 end
 
-function mod.mpz_cmp(op1, op2)
+function mod.z_cmp(op1, op2)
   return bind.__gmpz_cmp(op1, op2)
 end
 
-function mod.mpz_cmp_d(op1, op2)
+function mod.z_cmp_d(op1, op2)
   return bind.__gmpz_cmp_d(op1, op2)
 end
 
-function mod.mpz_cmp_si(op1, op2)
+function mod.z_cmp_si(op1, op2)
   return bind.__gmpz_cmp_si(op1, op2)
 end
 
-function mod.mpz_cmp_ui(op1, op2)
+function mod.z_cmp_ui(op1, op2)
   return bind.__gmpz_cmp_ui(op1, op2)
 end
 
-function mod.mpz_cmpabs(op1, op2)
+function mod.z_cmpabs(op1, op2)
   return bind.__gmpz_cmpabs(op1, op2)
 end
 
-function mod.mpz_cmpabs_d(op1, op2)
+function mod.z_cmpabs_d(op1, op2)
   return bind.__gmpz_cmpabs_d(op1, op2)
 end
 
-function mod.mpz_cmpabs_ui(op1, op2)
+function mod.z_cmpabs_ui(op1, op2)
   return bind.__gmpz_cmpabs_ui(op1, op2)
 end
 
-function mod.mpz_com(rop, op)
+function mod.z_com(rop, op)
   bind.__gmpz_com(rop, op)
 end
 
-function mod.mpz_combit(rop, bit_index)
+function mod.z_combit(rop, bit_index)
   bind.__gmpz_combit(rop, bit_index)
 end
 
-function mod.mpz_congruent_p(n, c, d)
+function mod.z_congruent_p(n, c, d)
   return bind.__gmpz_congruent_p(n, c, d)
 end
 
-function mod.mpz_congruent_2exp_p(n, c, b)
+function mod.z_congruent_2exp_p(n, c, b)
   return bind.__gmpz_congruent_2exp_p(n, c, b)
 end
 
-function mod.mpz_congruent_ui_p(n, c, d)
+function mod.z_congruent_ui_p(n, c, d)
   return bind.__gmpz_congruent_ui_p(n, c, d)
 end
 
-function mod.mpz_divexact(q, n, d)
+function mod.z_divexact(q, n, d)
   bind.__gmpz_divexact(q, n, d)
 end
 
-function mod.mpz_divexact_ui(q, n, d)
+function mod.z_divexact_ui(q, n, d)
   bind.__gmpz_divexact_ui(q, n, d)
 end
 
-function mod.mpz_divisible_p(n, d)
+function mod.z_divisible_p(n, d)
   return bind.__gmpz_divisible_p(n, d)
 end
 
-function mod.mpz_divisible_ui_p(n, d)
+function mod.z_divisible_ui_p(n, d)
   return bind.__gmpz_divisible_ui_p(n, d)
 end
 
-function mod.mpz_divisible_2exp_p(n, b)
+function mod.z_divisible_2exp_p(n, b)
   return bind.__gmpz_divisible_2exp_p(n, b)
 end
 
-function mod.mpz_dump(u)
+function mod.z_dump(u)
   bind.__gmpz_dump(u)
 end
 
--- function mod.mpz_export(rop, countp, order, size, endian, nails, op)
+-- function mod.z_export(rop, countp, order, size, endian, nails, op)
 -- --  void *__gmpz_export (void *, size_t *, int, size_t, int, size_t, mpz_srcptr)
 --   return bind.__gmpz_export(rop, countp, order, size, endian, nails, op)
 -- end
 
-function mod.mpz_fac_ui(rop, n)
+function mod.z_fac_ui(rop, n)
   bind.__gmpz_fac_ui(rop, n)
 end
 
-function mod.mpz_2fac_ui(rop, n)
+function mod.z_2fac_ui(rop, n)
   bind.__gmpz_2fac_ui(rop, n)
 end
 
-function mod.mpz_mfac_uiui(rop, n, m)
+function mod.z_mfac_uiui(rop, n, m)
   bind.__gmpz_mfac_uiui(rop, n, m)
 end
 
-function mod.mpz_primorial_ui(rop, n)
+function mod.z_primorial_ui(rop, n)
   bind.__gmpz_primorial_ui(rop, n)
 end
 
-function mod.mpz_fdiv_q(q, n, d)
+function mod.z_fdiv_q(q, n, d)
   bind.__gmpz_fdiv_q(q, n, d)
 end
 
-function mod.mpz_fdiv_q_2exp(q, n, b)
+function mod.z_fdiv_q_2exp(q, n, b)
   bind.__gmpz_fdiv_q_2exp(q, n, b)
 end
 
-function mod.mpz_fdiv_q_ui(q, n, d)
+function mod.z_fdiv_q_ui(q, n, d)
   return bind.__gmpz_fdiv_q_ui(q, n, d)
 end
 
-function mod.mpz_fdiv_qr(q, r, n, d)
+function mod.z_fdiv_qr(q, r, n, d)
   bind.__gmpz_fdiv_qr(q, r, n, d)
 end
 
-function mod.mpz_fdiv_qr_ui(q, r, n, d)
+function mod.z_fdiv_qr_ui(q, r, n, d)
   return bind.__gmpz_fdiv_qr_ui(q, r, n, d)
 end
 
-function mod.mpz_fdiv_r(r, n, d)
+function mod.z_fdiv_r(r, n, d)
   bind.__gmpz_fdiv_r(r, n, d)
 end
 
-function mod.mpz_fdiv_r_2exp(r, n, b)
+function mod.z_fdiv_r_2exp(r, n, b)
   bind.__gmpz_fdiv_r_2exp(r, n, b)
 end
 
-function mod.mpz_fdiv_r_ui(r, n, d)
+function mod.z_fdiv_r_ui(r, n, d)
   return bind.__gmpz_fdiv_r_ui(r, n, d)
 end
 
-function mod.mpz_fdiv_ui(n, d)
+function mod.z_fdiv_ui(n, d)
   return bind.__gmpz_fdiv_ui(n, d)
 end
 
-function mod.mpz_fib_ui(fn, n)
+function mod.z_fib_ui(fn, n)
   bind.__gmpz_fib_ui(fn, n)
 end
 
-function mod.mpz_fib2_ui(fn, fnsub1, n)
+function mod.z_fib2_ui(fn, fnsub1, n)
   bind.__gmpz_fib2_ui(fn, fnsub1, n)
 end
 
-function mod.mpz_fits_sint_p(op)
+function mod.z_fits_sint_p(op)
   return bind.__gmpz_fits_sint_p(op)
 end
 
-function mod.mpz_fits_slong_p(op)
+function mod.z_fits_slong_p(op)
   return bind.__gmpz_fits_slong_p(op)
 end
 
-function mod.mpz_fits_sshort_p(op)
+function mod.z_fits_sshort_p(op)
   return bind.__gmpz_fits_sshort_p(op)
 end
 
-function mod.mpz_fits_uint_p(op)
+function mod.z_fits_uint_p(op)
   return bind.__gmpz_fits_uint_p(op)
 end
 
-function mod.mpz_fits_ulong_p(op)
+function mod.z_fits_ulong_p(op)
   return bind.__gmpz_fits_ulong_p(op)
 end
 
-function mod.mpz_fits_ushort_p(op)
+function mod.z_fits_ushort_p(op)
   return bind.__gmpz_fits_ushort_p(op)
 end
 
-function mod.mpz_gcd(rop, op1, op2)
+function mod.z_gcd(rop, op1, op2)
   bind.__gmpz_gcd(rop, op1, op2)
 end
 
-function mod.mpz_gcd_ui(rop, op1, op2)
+function mod.z_gcd_ui(rop, op1, op2)
   return bind.__gmpz_gcd_ui(rop, op1, op2)
 end
 
-function mod.mpz_gcdext(g, s, t, a, b)
+function mod.z_gcdext(g, s, t, a, b)
   bind.__gmpz_gcdext(g, s, t, a, b)
 end
 
-function mod.mpz_get_d(op)
+function mod.z_get_d(op)
   return bind.__gmpz_get_d(op)
 end
 
-function mod.mpz_get_d_2exp(exp, op)
+function mod.z_get_d_2exp(exp, op)
   return bind.__gmpz_get_d_2exp(exp, op)
 end
 
-function mod.mpz_get_si(op)
+function mod.z_get_si(op)
   return bind.__gmpz_get_si(op)
 end
 
-function mod.mpz_get_str(str, base, op)
+function mod.z_get_str(str, base, op)
   return ffi.string(bind.__gmpz_get_str(str, base, op))
 end
 
-function mod.mpz_get_ui(op)
+function mod.z_get_ui(op)
   return bind.__gmpz_get_ui(op)
 end
 
-function mod.mpz_getlimbn(op, n)
+function mod.z_getlimbn(op, n)
   return bind.__gmpz_getlimbn(op, n)
 end
 
-function mod.mpz_hamdist(op1, op2)
+function mod.z_hamdist(op1, op2)
   return bind.__gmpz_hamdist(op1, op2)
 end
 
--- function mod.mpz_import(rop, count, order, size, endian, nails, op)
+-- function mod.z_import(rop, count, order, size, endian, nails, op)
 -- --  void __gmpz_import (mpz_ptr, size_t, int, size_t, int, size_t, const void *)
 --   bind.__gmpz_import(rop, count, order, size, endian, nails, op)
 -- end
 
-function mod.mpz_init(x)
+function mod.z_init(x)
   bind.__gmpz_init(x)
 end
 
-function mod.mpz_init2(x, n)
+function mod.z_init2(x, n)
   bind.__gmpz_init2(x, n)
 end
 
-function mod.mpz_inits(x, ...)
+function mod.z_inits(x, ...)
   bind.__gmpz_inits(x, help.vararg(...))
 end
 
-function mod.mpz_init_set(rop, op)
+function mod.z_init_set(rop, op)
   bind.__gmpz_init_set(rop, op)
 end
 
-function mod.mpz_init_set_d(rop, op)
+function mod.z_init_set_d(rop, op)
   bind.__gmpz_init_set_d(rop, op)
 end
 
-function mod.mpz_init_set_si(rop, op)
+function mod.z_init_set_si(rop, op)
   bind.__gmpz_init_set_si(rop, op)
 end
 
-function mod.mpz_init_set_str(rop, str, base)
+function mod.z_init_set_str(rop, str, base)
   return bind.__gmpz_init_set_str(rop, str, base)
 end
 
-function mod.mpz_init_set_ui(rop, op)
+function mod.z_init_set_ui(rop, op)
   bind.__gmpz_init_set_ui(rop, op)
 end
 
-function mod.mpz_inp_raw(rop, stream)
+function mod.z_inp_raw(rop, stream)
   return bind.__gmpz_inp_raw(rop, stream)
 end
 
-function mod.mpz_inp_str(rop, stream, base)
+function mod.z_inp_str(rop, stream, base)
   return bind.__gmpz_inp_str(rop, stream, base)
 end
 
-function mod.mpz_invert(rop, op1, op2)
+function mod.z_invert(rop, op1, op2)
   return bind.__gmpz_invert(rop, op1, op2)
 end
 
-function mod.mpz_ior(rop, op1, op2)
+function mod.z_ior(rop, op1, op2)
   bind.__gmpz_ior(rop, op1, op2)
 end
 
-function mod.mpz_jacobi(a, b)
+function mod.z_jacobi(a, b)
   return bind.__gmpz_jacobi(a, b)
 end
 
-function mod.mpz_kronecker_si(a, b)
+function mod.z_kronecker_si(a, b)
   return bind.__gmpz_kronecker_si(a, b)
 end
 
-function mod.mpz_kronecker_ui(a, b)
+function mod.z_kronecker_ui(a, b)
   return bind.__gmpz_kronecker_ui(a, b)
 end
 
-function mod.mpz_si_kronecker(a, b)
+function mod.z_si_kronecker(a, b)
   return bind.__gmpz_si_kronecker(a, b)
 end
 
-function mod.mpz_ui_kronecker(a, b)
+function mod.z_ui_kronecker(a, b)
   return bind.__gmpz_ui_kronecker(a, b)
 end
 
-function mod.mpz_lcm(rop, op1, op2)
+function mod.z_lcm(rop, op1, op2)
   bind.__gmpz_lcm(rop, op1, op2)
 end
 
-function mod.mpz_lcm_ui(rop, op1, op2)
+function mod.z_lcm_ui(rop, op1, op2)
   bind.__gmpz_lcm_ui(rop, op1, op2)
 end
 
-function mod.mpz_lucnum_ui(ln, n)
+function mod.z_lucnum_ui(ln, n)
   bind.__gmpz_lucnum_ui(ln, n)
 end
 
-function mod.mpz_lucnum2_ui(ln, lnsub1, n)
+function mod.z_lucnum2_ui(ln, lnsub1, n)
   bind.__gmpz_lucnum2_ui(ln, lnsub1, n)
 end
 
-function mod.mpz_millerrabin(n, reps)
+function mod.z_millerrabin(n, reps)
   return bind.__gmpz_millerrabin(n, reps)
 end
 
-function mod.mpz_mod(r, n, d)
+function mod.z_mod(r, n, d)
   bind.__gmpz_mod(r, n, d)
 end
 
-function mod.mpz_mul(rop, op1, op2)
+function mod.z_mul(rop, op1, op2)
   bind.__gmpz_mul(rop, op1, op1)
 end
 
-function mod.mpz_mul_2exp(rop, op1, op2)
+function mod.z_mul_2exp(rop, op1, op2)
   bind.__gmpz_mul_2exp(rop, op1, op2)
 end
 
-function mod.mpz_mul_si(rop, op1, op2)
+function mod.z_mul_si(rop, op1, op2)
   bind.__gmpz_mul_si(rop, op1, op2)
 end
 
-function mod.mpz_mul_ui(rop, op1, op2)
+function mod.z_mul_ui(rop, op1, op2)
   bind.__gmpz_mul_ui(rop, op1, op2)
 end
 
-function mod.mpz_neg(rop, op)
+function mod.z_neg(rop, op)
   bind.__gmpz_neg(rop, op)
 end
 
-function mod.mpz_nextprime(rop, op)
+function mod.z_nextprime(rop, op)
   bind.__gmpz_nextprime(rop, op)
 end
 
-function mod.mpz_out_raw(stream, op)
+function mod.z_out_raw(stream, op)
   return bind.__gmpz_out_raw(stream, op)
 end
 
-function mod.mpz_out_str(stream, base, op)
+function mod.z_out_str(stream, base, op)
   return bind.__gmpz_out_str(stream, base, op)
 end
 
-function mod.mpz_perfect_power_p(op)
+function mod.z_perfect_power_p(op)
   return bind.__gmpz_perfect_power_p(op)
 end
 
-function mod.mpz_perfect_square_p(op)
+function mod.z_perfect_square_p(op)
   return bind.__gmpz_perfect_square_p(op)
 end
 
-function mod.mpz_popcount(op)
+function mod.z_popcount(op)
   return bind.__gmpz_popcount(op)
 end
 
-function mod.mpz_pow_ui(rop, base, exp)
+function mod.z_pow_ui(rop, base, exp)
   bind.__gmpz_pow_ui(rop, base, exp)
 end
 
-function mod.mpz_powm(rop, base, exp, mod)
+function mod.z_powm(rop, base, exp, mod)
   bind.__gmpz_powm(rop, base, exp, mod)
 end
 
-function mod.mpz_powm_sec(rop, base, exp, mod)
+function mod.z_powm_sec(rop, base, exp, mod)
   bind.__gmpz_powm_sec(rop, base, exp, mod)
 end
 
-function mod.mpz_powm_ui(rop, base, exp, mod)
+function mod.z_powm_ui(rop, base, exp, mod)
   bind.__gmpz_powm_ui(rop, base, exp, mod)
 end
 
-function mod.mpz_probab_prime_p(n, reps)
+function mod.z_probab_prime_p(n, reps)
   return bind.__gmpz_probab_prime_p(n, reps)
 end
 
-function mod.mpz_random(rop, max_size)
+function mod.z_random(rop, max_size)
   bind.__gmpz_random(rop, max_size)
 end
 
-function mod.mpz_random2(rop, max_size)
+function mod.z_random2(rop, max_size)
   bind.__gmpz_random2(rop, max_size)
 end
 
-function mod.mpz_realloc2(x, n)
+function mod.z_realloc2(x, n)
   bind.__gmpz_realloc2(x, n)
 end
 
-function mod.mpz_remove(rop, op, f)
+function mod.z_remove(rop, op, f)
   return bind.__gmpz_remove(rop, op, f)
 end
 
-function mod.mpz_root(rop, op, n)
+function mod.z_root(rop, op, n)
   return bind.__gmpz_root(rop, op, n)
 end
 
-function mod.mpz_rootrem(root, rem, u, n)
+function mod.z_rootrem(root, rem, u, n)
   bind.__gmpz_rootrem(root, rem, u, n)
 end
 
-function mod.mpz_rrandomb(rop, state, n)
+function mod.z_rrandomb(rop, state, n)
   bind.__gmpz_rrandomb(rop, state, n)
 end
 
-function mod.mpz_scan0(op, starting_bit)
+function mod.z_scan0(op, starting_bit)
   return bind.__gmpz_scan0(op, starting_bit)
 end
 
-function mod.mpz_scan1(op, starting_bit)
+function mod.z_scan1(op, starting_bit)
   return bind.__gmpz_scan1(op, starting_bit)
 end
 
-function mod.mpz_set(rop, op)
+function mod.z_set(rop, op)
   bind.__gmpz_set(rop, op)
 end
 
-function mod.mpz_set_d(rop, op)
+function mod.z_set_d(rop, op)
   bind.__gmpz_set_d(rop, op)
 end
 
-function mod.mpz_set_f(rop, op)
+function mod.z_set_f(rop, op)
   bind.__gmpz_set_f(rop, op)
 end
 
-function mod.mpz_set_q(rop, op)
+function mod.z_set_q(rop, op)
   bind.__gmpz_set_q(rop, op)
 end
 
-function mod.mpz_set_si(rop, op)
+function mod.z_set_si(rop, op)
   bind.__gmpz_set_si(rop, op)
 end
 
-function mod.mpz_set_str(rop, str, base)
+function mod.z_set_str(rop, str, base)
   return bind.__gmpz_set_str(rop, str, base)
 end
 
-function mod.mpz_set_ui(rop, op)
+function mod.z_set_ui(rop, op)
   bind.__gmpz_set_ui(rop, op)
 end
 
-function mod.mpz_setbit(rop, bit_index)
+function mod.z_setbit(rop, bit_index)
   bind.__gmpz_setbit(rop, bit_index)
 end
 
-function mod.mpz_size(op)
+function mod.z_size(op)
   return bind.__gmpz_size(op)
 end
 
-function mod.mpz_sizeinbase(op, base)
+function mod.z_sizeinbase(op, base)
   return bind.__gmpz_sizeinbase(op, base)
 end
 
-function mod.mpz_sqrt(rop, op)
+function mod.z_sqrt(rop, op)
   bind.__gmpz_sqrt(rop, op)
 end
 
-function mod.mpz_sqrtrem(rop1, rop2, op)
+function mod.z_sqrtrem(rop1, rop2, op)
   bind.__gmpz_sqrtrem(rop1, rop2, op)
 end
 
-function mod.mpz_sub(rop, op1, op2)
+function mod.z_sub(rop, op1, op2)
   bind.__gmpz_sub(rop, op1, op2)
 end
 
-function mod.mpz_sub_ui(rop, op1, op2)
+function mod.z_sub_ui(rop, op1, op2)
   bind.__gmpz_sub_ui(rop, op1, op2)
 end
 
-function mod.mpz_ui_sub(rop, op1, op2)
+function mod.z_ui_sub(rop, op1, op2)
   bind.__gmpz_ui_sub(rop, op1, op2)
 end
 
-function mod.mpz_submul(rop, op1, op2)
+function mod.z_submul(rop, op1, op2)
   bind.__gmpz_submul(rop, op1, op2)
 end
 
-function mod.mpz_submul_ui(rop, op1, op2)
+function mod.z_submul_ui(rop, op1, op2)
   bind.__gmpz_submul_ui(rop, op1, op2)
 end
 
-function mod.mpz_swap(rop1, rop2)
+function mod.z_swap(rop1, rop2)
   bind.__gmpz_swap(rop1, rop2)
 end
 
-function mod.mpz_tdiv_ui(n, d)
+function mod.z_tdiv_ui(n, d)
   return bind.__gmpz_tdiv_ui(n, d)
 end
 
-function mod.mpz_tdiv_q(q, n, d)
+function mod.z_tdiv_q(q, n, d)
   bind.__gmpz_tdiv_q(q, n, d)
 end
 
-function mod.mpz_tdiv_q_2exp(q, n, b)
+function mod.z_tdiv_q_2exp(q, n, b)
   bind.__gmpz_tdiv_q_2exp(q, n, b)
 end
 
-function mod.mpz_tdiv_q_ui(q, n, d)
+function mod.z_tdiv_q_ui(q, n, d)
   return bind.__gmpz_tdiv_q_ui(q, n, d)
 end
 
-function mod.mpz_tdiv_qr(q, r, n, d)
+function mod.z_tdiv_qr(q, r, n, d)
   bind.__gmpz_tdiv_qr(q, r, n, d)
 end
 
-function mod.mpz_tdiv_qr_ui(q, r, n, d)
+function mod.z_tdiv_qr_ui(q, r, n, d)
   return bind.__gmpz_tdiv_qr_ui(q, r, n, d)
 end
 
-function mod.mpz_tdiv_r(r, n, d)
+function mod.z_tdiv_r(r, n, d)
   bind.__gmpz_tdiv_r(r, n, d)
 end
 
-function mod.mpz_tdiv_r_2exp(r, n, b)
+function mod.z_tdiv_r_2exp(r, n, b)
   bind.__gmpz_tdiv_r_2exp(r, n, b)
 end
 
-function mod.mpz_tdiv_r_ui(r, n, d)
+function mod.z_tdiv_r_ui(r, n, d)
   return bind.__gmpz_tdiv_r_ui(r, n, d)
 end
 
-function mod.mpz_tstbit(rop, bit_index)
+function mod.z_tstbit(rop, bit_index)
   return bind.__gmpz_tstbit(rop, bit_index)
 end
 
-function mod.mpz_ui_pow_ui(rop, base, exp)
+function mod.z_ui_pow_ui(rop, base, exp)
   bind.__gmpz_ui_pow_ui(rop, base, exp)
 end
 
-function mod.mpz_urandomb(rop, state, n)
+function mod.z_urandomb(rop, state, n)
   bind.__gmpz_urandomb(rop, state, n)
 end
 
-function mod.mpz_urandomm(rop, state, n)
+function mod.z_urandomm(rop, state, n)
   bind.__gmpz_urandomm(rop, state, n)
 end
 
-function mod.mpz_xor(rop, op1, op2)
+function mod.z_xor(rop, op1, op2)
   bind.__gmpz_xor(rop, op1, op2)
 end
 
-function mod.mpq_abs(rop, op)
+function mod.q_abs(rop, op)
   bind.__gmpq_abs(rop, op)
 end
 
-function mod.mpq_add(summ, addend1, addend2)
+function mod.q_add(summ, addend1, addend2)
   bind.__gmpq_add(summ, addend1, addend2)
 end
 
-function mod.mpq_canonicalize(op)
+function mod.q_canonicalize(op)
   bind.__gmpq_canonicalize(op)
 end
 
-function mod.mpq_clear(x)
+function mod.q_clear(x)
   bind.__gmpq_clear(x)
 end
 
-function mod.mpq_clears(x, ...)
+function mod.q_clears(x, ...)
   bind.__gmpq_clears(x, help.vararg(...))
 end
 
-function mod.mpq_cmp(op1, op2)
+function mod.q_cmp(op1, op2)
   return bind.__gmpq_cmp(op1, op2)
 end
 
-function mod.mpq_cmp_si(op1, num2, den2)
+function mod.q_cmp_si(op1, num2, den2)
   return bind.__gmpq_cmp_si(op1, num2, den2)
 end
 
-function mod.mpq_cmp_ui(op1, num2, den2)
+function mod.q_cmp_ui(op1, num2, den2)
   return bind.__gmpq_cmp_ui(op1, num2, den2)
 end
 
-function mod.mpq_div(quotient, dividend, divisor)
+function mod.q_div(quotient, dividend, divisor)
   bind.__gmpq_div(quotient, dividend, divisor)
 end
 
-function mod.mpq_div_2exp(rop, op1, op2)
+function mod.q_div_2exp(rop, op1, op2)
   bind.__gmpq_div_2exp(rop, op1, op2)
 end
 
-function mod.mpq_equal(op1, op2)
+function mod.q_equal(op1, op2)
   return bind.__gmpq_equal(op1, op2)
 end
 
-function mod.mpq_get_num(numerator, rational)
+function mod.q_get_num(numerator, rational)
   bind.__gmpq_get_num(numerator, rational)
 end
 
-function mod.mpq_get_den(denominator, rational)
+function mod.q_get_den(denominator, rational)
   bind.__gmpq_get_den(denominator, rational)
 end
 
-function mod.mpq_get_d(op)
+function mod.q_get_d(op)
   return bind.__gmpq_get_d(op)
 end
 
-function mod.mpq_get_str(str, base, op)
+function mod.q_get_str(str, base, op)
   return ffi.string(bind.__gmpq_get_str(str, base, op))
 end
 
-function mod.mpq_init(x)
+function mod.q_init(x)
   bind.__gmpq_init(x)
 end
 
-function mod.mpq_inits(x, ...)
+function mod.q_inits(x, ...)
   bind.__gmpq_inits(x, help.vararg(...))
 end
 
-function mod.mpq_inp_str(rop, stream, base)
+function mod.q_inp_str(rop, stream, base)
   return bind.__gmpq_inp_str(rop, stream, base)
 end
 
-function mod.mpq_inv(inverted_number, number)
+function mod.q_inv(inverted_number, number)
   bind.__gmpq_inv(inverted_number, number)
 end
 
-function mod.mpq_mul(product, multiplier, multiplicand)
+function mod.q_mul(product, multiplier, multiplicand)
   bind.__gmpq_mul(product, multiplier, multiplicand)
 end
 
-function mod.mpq_mul_2exp(rop, op1, op2)
+function mod.q_mul_2exp(rop, op1, op2)
   bind.__gmpq_mul_2exp(rop, op1, op2)
 end
 
-function mod.mpq_neg(negated_operand, operand)
+function mod.q_neg(negated_operand, operand)
   bind.__gmpq_neg(negated_operand, operand)
 end
 
-function mod.mpq_out_str(stream, base, op)
+function mod.q_out_str(stream, base, op)
   return bind.__gmpq_out_str(stream, base, op)
 end
 
-function mod.mpq_set(rop, op)
+function mod.q_set(rop, op)
   bind.__gmpq_set(rop, op)
 end
 
-function mod.mpq_set_d(rop, op)
+function mod.q_set_d(rop, op)
   bind.__gmpq_set_d(rop, op)
 end
 
-function mod.mpq_set_den(rational, denominator)
+function mod.q_set_den(rational, denominator)
   bind.__gmpq_set_den(rational, denominator)
 end
 
-function mod.mpq_set_f(rop, op)
+function mod.q_set_f(rop, op)
   bind.__gmpq_set_f(rop, op)
 end
 
-function mod.mpq_set_num(rational, numerator)
+function mod.q_set_num(rational, numerator)
   bind.__gmpq_set_num(rational, numerator)
 end
 
-function mod.mpq_set_si(rop, op1, op2)
+function mod.q_set_si(rop, op1, op2)
   bind.__gmpq_set_si(rop, op1, op2)
 end
 
-function mod.mpq_set_str(rop, str, base)
+function mod.q_set_str(rop, str, base)
   return bind.__gmpq_set_str(rop, str, base)
 end
 
-function mod.mpq_set_ui(rop, op1, op2)
+function mod.q_set_ui(rop, op1, op2)
   bind.__gmpq_set_ui(rop, op1, op2)
 end
 
-function mod.mpq_set_z(rop, op)
+function mod.q_set_z(rop, op)
   bind.__gmpq_set_z(rop, op)
 end
 
-function mod.mpq_sub(difference, minuend, subtrahend)
+function mod.q_sub(difference, minuend, subtrahend)
   bind.__gmpq_sub(difference, minuend, subtrahend)
 end
 
-function mod.mpq_swap(rop1, rop2)
+function mod.q_swap(rop1, rop2)
   bind.__gmpq_swap(rop1, rop2)
 end
 
-function mod.mpf_abs(rop, op)
+function mod.f_abs(rop, op)
   bind.__gmpf_abs(rop, op)
 end
 
-function mod.mpf_add(rop, op1, op2)
+function mod.f_add(rop, op1, op2)
   bind.__gmpf_add(rop, op1, op2)
 end
 
-function mod.mpf_add_ui(rop, op1, op2)
+function mod.f_add_ui(rop, op1, op2)
   bind.__gmpf_add_ui(rop, op1, op2)
 end
 
-function mod.mpf_ceil(rop, op)
+function mod.f_ceil(rop, op)
   bind.__gmpf_ceil(rop, op)
 end
 
-function mod.mpf_clear(x)
+function mod.f_clear(x)
   bind.__gmpf_clear(x)
 end
 
-function mod.mpf_clears(x, ...)
+function mod.f_clears(x, ...)
   bind.__gmpf_clears(x, help.vararg(...))
 end
 
-function mod.mpf_cmp(op1, op2)
+function mod.f_cmp(op1, op2)
   return bind.__gmpf_cmp(op1, op2)
 end
 
-function mod.mpf_cmp_d(op1, op2)
+function mod.f_cmp_d(op1, op2)
   return bind.__gmpf_cmp_d(op1, op2)
 end
 
-function mod.mpf_cmp_si(op1, op2)
+function mod.f_cmp_si(op1, op2)
   return bind.__gmpf_cmp_si(op1, op2)
 end
 
-function mod.mpf_cmp_ui(op1, op2)
+function mod.f_cmp_ui(op1, op2)
   return bind.__gmpf_cmp_ui(op1, op2)
 end
 
-function mod.mpf_div(rop, op1, op2)
+function mod.f_div(rop, op1, op2)
   bind.__gmpf_div(rop, op1, op2)
 end
 
-function mod.mpf_div_2exp(rop, op1, op2)
+function mod.f_div_2exp(rop, op1, op2)
   bind.__gmpf_div_2exp(rop, op1, op2)
 end
 
-function mod.mpf_div_ui(rop, op1, op2)
+function mod.f_div_ui(rop, op1, op2)
   bind.__gmpf_div_ui(rop, op1, op2)
 end
 
-function mod.mpf_dump(u)
+function mod.f_dump(u)
   bind.__gmpf_dump(u)
 end
 
-function mod.mpf_eq(op1, op2, op3)
+function mod.f_eq(op1, op2, op3)
   return bind.__gmpf_eq(op1, op2, op3)
 end
 
-function mod.mpf_fits_sint_p(op)
+function mod.f_fits_sint_p(op)
   return bind.__gmpf_fits_sint_p(op)
 end
 
-function mod.mpf_fits_slong_p(op)
+function mod.f_fits_slong_p(op)
   return bind.__gmpf_fits_slong_p(op)
 end
 
-function mod.mpf_fits_sshort_p(op)
+function mod.f_fits_sshort_p(op)
   return bind.__gmpf_fits_sshort_p(op)
 end
 
-function mod.mpf_fits_uint_p(op)
+function mod.f_fits_uint_p(op)
   return bind.__gmpf_fits_uint_p(op)
 end
 
-function mod.mpf_fits_ulong_p(op)
+function mod.f_fits_ulong_p(op)
   return bind.__gmpf_fits_ulong_p(op)
 end
 
-function mod.mpf_fits_ushort_p(op)
+function mod.f_fits_ushort_p(op)
   return bind.__gmpf_fits_ushort_p(op)
 end
 
-function mod.mpf_floor(rop, op)
+function mod.f_floor(rop, op)
   bind.__gmpf_floor(rop, op)
 end
 
-function mod.mpf_get_d(op)
+function mod.f_get_d(op)
   return bind.__gmpf_get_d(op)
 end
 
-function mod.mpf_get_d_2exp(op)
+function mod.f_get_d_2exp(op)
   local exp = ffi.new('signed long int[1]')
   local rop = bind.__gmpf_get_d_2exp(exp, op)
   return rop, exp[0]
 end
 
-function mod.mpf_get_default_prec()
+function mod.f_get_default_prec()
   return bind.__gmpf_get_default_prec()
 end
 
-function mod.mpf_get_prec(op)
+function mod.f_get_prec(op)
   return bind.__gmpf_get_prec(op)
 end
 
-function mod.mpf_get_si(op)
+function mod.f_get_si(op)
   return bind.__gmpf_get_si(op)
 end
 
-function mod.mpf_get_str(str, base, n_digits, op)
+function mod.f_get_str(str, base, n_digits, op)
   local exp = ffi.new('mp_exp_t[1]')
   local str = ffi.string(bind.__gmpf_get_str(str, exp, base, n_digits, op))
   return str, exp[0]
 end
 
-function mod.mpf_get_ui(op)
+function mod.f_get_ui(op)
   return bind.__gmpf_get_ui(op)
 end
 
-function mod.mpf_init(x)
+function mod.f_init(x)
   bind.__gmpf_init(x)
 end
 
-function mod.mpf_init2(x, prec)
+function mod.f_init2(x, prec)
   bind.__gmpf_init2(x, prec)
 end
 
-function mod.mpf_inits(x, ...)
+function mod.f_inits(x, ...)
   bind.__gmpf_inits(x, help.vararg(...))
 end
 
-function mod.mpf_init_set(rop, op)
+function mod.f_init_set(rop, op)
   bind.__gmpf_init_set(rop, op)
 end
 
-function mod.mpf_init_set_d(rop, op)
+function mod.f_init_set_d(rop, op)
   bind.__gmpf_init_set_d(rop, op)
 end
 
-function mod.mpf_init_set_si(rop, op)
+function mod.f_init_set_si(rop, op)
   bind.__gmpf_init_set_si(rop, op)
 end
 
-function mod.mpf_init_set_str(rop, str, base)
+function mod.f_init_set_str(rop, str, base)
   return bind.__gmpf_init_set_str(rop, str, base)
 end
 
-function mod.mpf_init_set_ui(rop, op)
+function mod.f_init_set_ui(rop, op)
   bind.__gmpf_init_set_ui(rop, op)
 end
 
-function mod.mpf_inp_str(rop, stream, base)
+function mod.f_inp_str(rop, stream, base)
   return bind.__gmpf_inp_str(rop, stream, base)
 end
 
-function mod.mpf_integer_p(op)
+function mod.f_integer_p(op)
   return bind.__gmpf_integer_p(op)
 end
 
-function mod.mpf_mul(rop, op1, op2)
+function mod.f_mul(rop, op1, op2)
   bind.__gmpf_mul(rop, op1, op2)
 end
 
-function mod.mpf_mul_2exp(rop, op1, op2)
+function mod.f_mul_2exp(rop, op1, op2)
   bind.__gmpf_mul_2exp(rop, op1, op2)
 end
 
-function mod.mpf_mul_ui(rop, op1, op2)
+function mod.f_mul_ui(rop, op1, op2)
   bind.__gmpf_mul_ui(rop, op1, op2)
 end
 
-function mod.mpf_neg(rop, op)
+function mod.f_neg(rop, op)
   bind.__gmpf_neg(rop, op)
 end
 
-function mod.mpf_out_str(stream, base, n_digits, op)
+function mod.f_out_str(stream, base, n_digits, op)
   return bind.__gmpf_out_str(stream, base, n_digits, op)
 end
 
-function mod.mpf_pow_ui(rop, op1, op2)
+function mod.f_pow_ui(rop, op1, op2)
   bind.__gmpf_pow_ui(rop, op1, op2)
 end
 
-function mod.mpf_random2(rop, max_size, exp)
+function mod.f_random2(rop, max_size, exp)
   bind.__gmpf_random2(rop, max_size, exp)
 end
 
-function mod.mpf_reldiff(rop, op1, op2)
+function mod.f_reldiff(rop, op1, op2)
   bind.__gmpf_reldiff(rop, op1, op2)
 end
 
-function mod.mpf_set(rop, op)
+function mod.f_set(rop, op)
   bind.__gmpf_set(rop, op)
 end
 
-function mod.mpf_set_d(rop, op)
+function mod.f_set_d(rop, op)
   bind.__gmpf_set_d(rop, op)
 end
 
-function mod.mpf_set_default_prec(prec)
+function mod.f_set_default_prec(prec)
   bind.__gmpf_set_default_prec(prec)
 end
 
-function mod.mpf_set_prec(rop, prec)
+function mod.f_set_prec(rop, prec)
   bind.__gmpf_set_prec(rop, prec)
 end
 
-function mod.mpf_set_prec_raw(rop, prec)
+function mod.f_set_prec_raw(rop, prec)
   bind.__gmpf_set_prec_raw(rop, prec)
 end
 
-function mod.mpf_set_q(rop, op)
+function mod.f_set_q(rop, op)
   bind.__gmpf_set_q(rop, op)
 end
 
-function mod.mpf_set_si(rop, op)
+function mod.f_set_si(rop, op)
   bind.__gmpf_set_si(rop, op)
 end
 
-function mod.mpf_set_str(rop, str, base)
+function mod.f_set_str(rop, str, base)
   return bind.__gmpf_set_str(rop, str, base)
 end
 
-function mod.mpf_set_ui(rop, op)
+function mod.f_set_ui(rop, op)
   bind.__gmpf_set_ui(rop, op)
 end
 
-function mod.mpf_set_z(rop, op)
+function mod.f_set_z(rop, op)
   bind.__gmpf_set_z(rop, op)
 end
 
-function mod.mpf_size(op)
+function mod.f_size(op)
   return bind.__gmpf_size(op)
 end
 
-function mod.mpf_sqrt(rop, op)
+function mod.f_sqrt(rop, op)
   bind.__gmpf_sqrt(rop, op)
 end
 
-function mod.mpf_sqrt_ui(rop, op)
+function mod.f_sqrt_ui(rop, op)
   bind.__gmpf_sqrt_ui(rop, op)
 end
 
-function mod.mpf_sub(rop, op1, op2)
+function mod.f_sub(rop, op1, op2)
   bind.__gmpf_sub(rop, op1, op2)
 end
 
-function mod.mpf_sub_ui(rop, op1, op2)
+function mod.f_sub_ui(rop, op1, op2)
   bind.__gmpf_sub_ui(rop, op1, op2)
 end
 
-function mod.mpf_swap(rop1, rop2)
+function mod.f_swap(rop1, rop2)
   bind.__gmpf_swap(rop1, rop2)
 end
 
-function mod.mpf_trunc(rop, op)
+function mod.f_trunc(rop, op)
   bind.__gmpf_trunc(rop, op)
 end
 
-function mod.mpf_ui_div(rop, op1, op2)
+function mod.f_ui_div(rop, op1, op2)
   bind.__gmpf_ui_div(rop, op1, op2)
 end
 
-function mod.mpf_ui_sub(rop, op1, op2)
+function mod.f_ui_sub(rop, op1, op2)
   bind.__gmpf_ui_sub(rop, op1, op2)
 end
 
-function mod.mpf_urandomb(rop, state, nbits)
+function mod.f_urandomb(rop, state, nbits)
   bind.__gmpf_urandomb(rop, state, nbits)
 end
 
@@ -1472,9 +1472,9 @@ end
 
 local types = {}
 
-types.mpz = 'mpz_t'
-types.mpq = 'mpq_t'
-types.mpf = 'mpf_t'
+types.z = 'mpz_t'
+types.q = 'mpq_t'
+types.f = 'mpf_t'
 types.randstate = 'gmp_randstate_t'
 
 
