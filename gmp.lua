@@ -827,7 +827,7 @@ function mod.z_mod(r, n, d)
 end
 
 function mod.z_mul(rop, op1, op2)
-  bind.__gmpz_mul(rop, op1, op1)
+  bind.__gmpz_mul(rop, op1, op2)
 end
 
 function mod.z_mul_2exp(rop, op1, op2)
